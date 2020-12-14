@@ -1,0 +1,41 @@
+package packege;
+
+public class Main {
+
+
+
+    public static void main(String[] args) {
+        System.out.println(lesson());
+        System.out.println(myLessonFirst());
+        System.out.println(myLesson());
+        System.out.println(myFirstLesson());
+    }
+    public static float lesson() {
+        float a = 1.12F, b = 2.12F , c = 3.12F, d = 4.12F;
+        float x = a * (b + (c/d));
+    return x;
+    }
+    public static boolean myLessonFirst() {
+        int a = 5;
+        int b = 12;
+        boolean c = true;
+        if ((a + b) >= 10 && (a + b) <= 20) {
+            return c;
+        } else {
+            return !c;
+        }
+    }
+    public static int myLesson() {
+        int a = 15;
+        if (a >= 0) {
+            System.out.println("Это число положительное");
+        } else if (a < 0){
+            System.out.println("Это число отрицательное");
+        }return a;
+    }
+    public static String myFirstLesson(){
+        String str = "Александр ";
+        return str;
+    }
+
+}
