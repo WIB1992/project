@@ -1,0 +1,68 @@
+package packege;
+
+
+import java.util.Arrays;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(dz2_1()));
+        System.out.println(Arrays.toString(dz2_2()));
+        System.out.println(Arrays.toString(dz2_3()));
+        System.out.println(Arrays.deepToString(dz2_4()));
+    }
+        // Задача 1
+        public static int[] dz2_1() {
+            int[] array = new int[]{1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] == 1) {
+                    array[i] = 0;
+                } else if (array[i] == 0) {
+                    array[i] = 1;
+                }
+            }
+            return array;
+        }
+        //Задача 2
+        public static int[] dz2_2() {
+            int[] array1 = new int[8];
+            for (int i = 0; i < array1.length; i++) {
+                array1[i] = i * 3;
+            }
+            return array1;
+        }
+        //Задача 3
+        public static int[] dz2_3() {
+            int[] array = new int[]{1,5,3,2,11,4,5,2,4,8,9,1};
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] < 6) {
+                    array[i] = array[i] * 2;
+                }
+            }return array;
+    }
+        //Задача 4
+        public static int[][] dz2_4(){
+            int[][] array = new int[5][5];
+            for (int i = 0; i < array.length; i++) {
+                for (int j = 0; j < array[i].length; j++) {
+                array[i][i] = 1;
+                array[i][array[i].length - 1 - i] = 1;
+
+                }
+            }
+
+            return array;
+        }
+        //Задача 5
+         public static int[] dz2_5() {
+             int[] array = new int[5];
+             int min = array[0];
+             for (int i = 0; i < array.length; i++) {
+                 if (array[i] < min) {
+                     min = array[i];
+                 }
+             }return array;
+         }
+        
+}
